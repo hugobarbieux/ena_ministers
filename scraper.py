@@ -1,11 +1,11 @@
 # This is a template for a Python scraper on morph.io (https://morph.io)
 # including some code snippets below that you should find helpful
 
-# import scraperwiki
-# import lxml.html
+import scraperwiki
+import lxml.html
 #
 # # Read in a page
-# html = scraperwiki.scrape("http://foo.com")
+html = scraperwiki.scrape("https://www.linkedin.com/search/results/people/?company=minist%C3%A8re&facetSchool=%5B%2212342%22%5D&origin=FACETED_SEARCH&page=1")
 #
 # # Find something on the page using css selectors
 # root = lxml.html.fromstring(html)
