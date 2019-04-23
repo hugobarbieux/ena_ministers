@@ -9,8 +9,8 @@ html = scraperwiki.scrape("https://www.linkedin.com/search/results/people/?compa
 print(html)
 #
 # # Find something on the page using css selectors
-root = lxml.html.fromstring(html)
-root.cssselect("li a h3")
+# root = lxml.html.fromstring(html)
+# root.cssselect("li a h3")
 # matchedlinks = root.cssselect("li a h3")
 #
 # # Write out to the sqlite database using scraperwiki library
