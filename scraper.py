@@ -10,7 +10,7 @@ html = scraperwiki.scrape("https://www.linkedin.com/search/results/people/?compa
 #
 # # Find something on the page using css selectors
 root = lxml.html.fromstring(html)
-root.cssselect("div h3 span['class=name actor-name']")
+root.cssselect("div h3 span")
 # matchedlinks = root.cssselect
 
 #
