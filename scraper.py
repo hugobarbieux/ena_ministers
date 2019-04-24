@@ -6,11 +6,11 @@ import lxml.html
 #
 # # Read in a page
 html = scraperwiki.scrape("https://www.linkedin.com/search/results/people/?company=minist%C3%A8re&facetSchool=%5B%2212342%22%5D&origin=FACETED_SEARCH&page=1")
-print(html)
+# print(html)
 #
 # # Find something on the page using css selectors
-# root = lxml.html.fromstring(html)
-# root.cssselect("li a h3")
+ root = lxml.html.fromstring(html)
+ root.cssselect("span[class="name actor-name"]")
 # matchedlinks = root.cssselect("li a h3")
 #
 # # Write out to the sqlite database using scraperwiki library
