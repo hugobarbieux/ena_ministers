@@ -9,9 +9,13 @@ html = scraperwiki.scrape("https://www.linkedin.com/search/results/people/?compa
 # print(html)
 #
 # # Find something on the page using css selectors
- root = lxml.html.fromstring(html)
- root.cssselect("span[class="name actor-name"]")
-# matchedlinks = root.cssselect("li a h3")
+# root = lxml.html.fromstring(html)
+# root.cssselect("span[class="name actor-name"]")
+# matchedlinks = root.cssselect
+
+# Try to scrape with Beautiful Soup
+soup=BeautifulSoup(data)
+t=soup.find('span',{'class':'name actor-name'})
 #
 # # Write out to the sqlite database using scraperwiki library
 # scraperwiki.sqlite.save(unique_keys=['name'], data={"name": "susan", "occupation": "software developer"})
