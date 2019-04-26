@@ -6,12 +6,12 @@ import lxml.html
 #
 # # Read in a page
 html = scraperwiki.scrape("https://www.linkedin.com/search/results/people/?company=minist%C3%A8re&facetSchool=%5B%2212342%22%5D&origin=FACETED_SEARCH")
-# print(html)
+print(html)
 #
 # # Find something on the page using css selectors
-root = lxml.html.fromstring(html)
-root.cssselect("//*[contains(@class,'name actor-name')]")[0]
-test = root.cssselect("//*[contains(@class,'name actor-name')]")[0]
+#root = lxml.html.fromstring(html)
+#root.cssselect("//*[contains(@class,'name actor-name')]")[0]
+#test = root.cssselect("//*[contains(@class,'name actor-name')]")[0]
 print(test)
 # matchedlinks = root.cssselect
 
